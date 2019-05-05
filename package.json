@@ -1,0 +1,23 @@
+{
+  "name": "ts-jest-inversify-debug",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/okunokentaro/ts-jest-inversify-debug/issues"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  },
+  "homepage": "https://github.com/okunokentaro/ts-jest-inversify-debug#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okunokentaro/ts-jest-inversify-debug.git"
+  },
+  "scripts": {
+    "postinstall": "cd ./target-es5 && npm i && cd - && cd ./target-es2015 && npm i && cd - ",
+    "test:es2015": "cd ./target-es2015 && npx jest",
+    "test:es5": "cd ./target-es5 && npx jest"
+  }
+}
